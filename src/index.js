@@ -3,17 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
-import Menu from "./Pages/Menu";
-import NavigationBar from "./Components/Navbar";
-import NyobaDelete from "./NyobaPost";
-import Produk from "./Components/Produk";
-import Hello from "./Components/Testimoni";
-import Home from "./Pages/Home";
+import App from "./App";
+import FormCariMobil from "./Components/FormCariMobil";
+import FormHasilPencarian from "./Components/FormHasilPencarian";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
+    <App />
   </React.StrictMode>
 );
 

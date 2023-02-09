@@ -11,51 +11,84 @@ code {
   font-family: "Signika Negative", sans-serif;
 }
 
-#gantiFont {
-  font-family: "Signika Negative", sans-serif;
+#sandwich {
+  display: none;
 }
 
-#img:hover {
-  transform: scale(1, 1.02);
+#cardTestimoni {
+  flex-direction: row;
+}
+#card {
+  width: 230%;
+}
+#gambarTestimoni {
+  width: 150px;
+  border-radius: 100px;
+}
+#accor {
+  width: 95%;
 }
 
-#skala {
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+#cardMobilSearch {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-#pesanan {
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+#gambarMobil {
   width: 100%;
+  padding-left: 120px;
 }
-
-#gambar {
-  border-radius: 50%;
-}
-
-#corousel {
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
-}
-
-#hasil:hover {
-  background-image: linear-gradient(
-    320deg,
-    hsl(0deg 16% 23%) 0%,
-    hsl(21deg 48% 40%) 3%,
-    hsl(43deg 80% 57%) 63%,
-    hsl(49deg 90% 53%) 90%,
-    hsl(55deg 100% 50%) 100%
-  );
-}
-
-@media screen and (max-width: 570px) {
-  #skala {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
-    border: 0px;
+@media screen and (max-width: 500px) {
+  #sub {
+    margin-left: 60px;
   }
-  #gambarProduk {
-    height: 30px;
-    overflow: hidden;
+  #cardMobilSearch {
+    margin-left: 0;
+    margin-right: 0;
   }
-  #harga {
-    font-size: 13px;
+  #formulir {
+    margin: 0 auto;
+  }
+  #gambarMobil {
+    width: 77%;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+  #konten {
+    margin-top: -40px;
+  }
+  #jumbutron {
+    width: "150%";
+  }
+  #gambarTestimoni {
+    padding: 0 auto;
+  }
+  #accor {
+    width: 100%;
+  }
+  #star {
+    left: 120px;
+    position: relative;
+  }
+  #menu {
+    display: none;
+  }
+
+  #cardTestimoni {
+    flex-direction: column;
+    top: -50px;
+    position: relative;
+  }
+  #card {
+    width: 400%;
+  }
+  #gambarTestimoni {
+    left: 120px;
+    position: relative;
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  #sandwich {
+    display: block;
   }
 }
