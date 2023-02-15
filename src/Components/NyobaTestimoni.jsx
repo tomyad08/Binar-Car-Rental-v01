@@ -94,14 +94,14 @@ const Testimoni = () => {
                 />
               </div>
               <div className="flex-md-3 px-1 pt-4">
-                <p className="text-left">
+                <p>
                   <img
                     src={value.star}
                     alt=""
                     style={{ width: "20%" }}
                     id="star"
                   />
-                  <q>{value.deskripsi}</q>
+                  <q style={{ textAlign: "justify" }}>{value.deskripsi}</q>
                 </p>
                 <h6 className="text-left">{value.nama}</h6>
               </div>

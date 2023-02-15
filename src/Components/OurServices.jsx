@@ -19,7 +19,7 @@ const OurServices = () => {
                 Best Car Rental for any kind of trip in (Lokasimu)!
               </strong>
             </h3>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
               lebih murah dibandingkan yang lain, kondisi mobil baru, serta
               kualitas pelayanan terbaik untuk perjalanan wisata, bisnis,

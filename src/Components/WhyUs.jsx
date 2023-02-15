@@ -36,7 +36,7 @@ const WhyUs = () => {
     <>
       <div className="container fluid mt-3 px-4" id="whyUs">
         <h2>Why Us?</h2>
-        <p>
+        <p style={{ textAlign: "justify" }}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe
           ipsam eligendi quas sit voluptate cumque nostrum autem, quos error id
           accusantium, tempore, sequi ex eveniet labore illo incidunt natus at
@@ -52,7 +52,7 @@ const WhyUs = () => {
             >
               <img src={value.gambar} alt=" " />
               <h5>{value.judul}</h5>
-              <p>{value.deskripsi}</p>
+              <p style={{ textAlign: "justify" }}>{value.deskripsi}</p>
             </div>
           ))}
         </div>

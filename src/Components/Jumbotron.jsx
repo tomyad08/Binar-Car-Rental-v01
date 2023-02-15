@@ -10,7 +10,7 @@ const Jumbutron = (props) => {
             <h2>
               <strong>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</strong>
             </h2>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               Selamat datang di Binar Car Rental. Kami menyediakan mobil
               kualitas terbaik dengan harga terjangkau. Selalu siap melayani
               kebutuhanmu untuk sewa mobil selama 24 jam.
