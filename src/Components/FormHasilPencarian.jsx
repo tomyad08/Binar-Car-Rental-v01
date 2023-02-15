@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const FormHasilPencarian = (props) => {
-  const [inputs, setInputs] = useState([]);
-  const [pesan, setPesan] = useState([]);
+const FormHasilPencarian = (data) => {
+  const pesanan = {
+    name: data.dataPesanan.nama,
+    category: data.dataPesanan.kategori,
+    price: data.dataPesanan.harga,
+  };
+  console.log("ini");
+  console.log(pesanan);
+  const [inputs, setInputs] = useState(pesanan ? pesanan : " ");
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -14,11 +20,9 @@ const FormHasilPencarian = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(inputs);
   };
 
-  useEffect(() => {
-    setPesan(props.dataPesanan);
-  });
   return (
     <div className="container-fluid">
       <form
@@ -33,7 +37,7 @@ const FormHasilPencarian = (props) => {
             <input
               type="text"
               name="nama"
-              value={inputs.nama || " " + pesan.nama}
+              value={inputs.name}
               onChange={handleChange}
               className="form-control"
               placeholder="Ketik nama/tipe mobil"
@@ -45,7 +49,7 @@ const FormHasilPencarian = (props) => {
               className="form-select form-select"
               aria-label=".form-select example"
               name="kategori"
-              value={inputs.kategori || pesan.kategori}
+              value={inputs.category}
               onChange={handleChange}
             >
               <option selected>Masukan kapasitas mobil</option>
@@ -60,7 +64,7 @@ const FormHasilPencarian = (props) => {
               className="form-select form-select"
               aria-label=".form-select example"
               name="harga"
-              value={inputs.harga || pesan.harga}
+              value={inputs.price}
               onChange={handleChange}
             >
               <option selected>Masukan harga sewa perhari</option>
@@ -70,16 +74,14 @@ const FormHasilPencarian = (props) => {
             </select>
           </div>
           <div className="col-md">
-            <Link to="/cari-mobil">
-              <button
-                className="btn btn-primary px-5"
-                style={{ marginTop: "30px" }}
-                type="submit"
-                id="sub"
-              >
-                Edit
-              </button>
-            </Link>
+            <button
+              className="btn btn-success px-5"
+              style={{ marginTop: "30px" }}
+              type="submit"
+              id="sub"
+            >
+              Edit
+            </button>
           </div>
         </div>
       </form>
