@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const FormHasilPencarian = (data) => {
   const pesanan = {
@@ -37,7 +35,7 @@ const FormHasilPencarian = (data) => {
             <input
               type="text"
               name="nama"
-              value={inputs.name}
+              value={inputs.name || " "}
               onChange={handleChange}
               className="form-control"
               placeholder="Ketik nama/tipe mobil"
@@ -49,7 +47,7 @@ const FormHasilPencarian = (data) => {
               className="form-select form-select"
               aria-label=".form-select example"
               name="kategori"
-              value={inputs.category}
+              value={inputs.category || " "}
               onChange={handleChange}
             >
               <option selected>Masukan kapasitas mobil</option>
@@ -64,7 +62,7 @@ const FormHasilPencarian = (data) => {
               className="form-select form-select"
               aria-label=".form-select example"
               name="harga"
-              value={inputs.price}
+              value={inputs.price || " "}
               onChange={handleChange}
             >
               <option selected>Masukan harga sewa perhari</option>

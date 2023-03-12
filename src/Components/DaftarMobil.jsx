@@ -28,7 +28,7 @@ const DaftarMobil = () => {
         {mobil.map((value) => (
           <>
             <div
-              className="col-md-2 border border-2 rounded-2 mb-2 float-center"
+              className="col-md-2 border border-2 rounded-2 mb-2"
               style={{ overflow: "hidden" }}
               id="cardMobilSearch"
               key={value.id}
