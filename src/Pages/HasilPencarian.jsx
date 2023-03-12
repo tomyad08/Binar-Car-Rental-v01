@@ -12,7 +12,7 @@ const HasilPencarian = () => {
   useEffect(() => {
     axios
       .get(
-        `https://bootcamp-rent-cars.herokuapp.com/customer/v2/car?name=${nama}`
+        `https://bootcamp-rent-cars.herokuapp.com/customer/v2/car?name=${data.nama}`
       )
       .then((res) => {
         setMobil(res.data.cars);
@@ -26,8 +26,6 @@ const HasilPencarian = () => {
     });
   };
   const data = location.state;
-
-  const nama = data.nama;
 
   return (
     <div>
